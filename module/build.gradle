@@ -22,7 +22,7 @@ publish {
     groupId = 'com.danielworld'
     artifactId = 'logger'
     publishVersion = '1.0.0'
-    desc = 'a log which contains stack element and other thread information'
+    desc = 'A logger which contains stack element and other thread information'
     website = 'https://github.com/DanielWorld/Logger'
     issueTracker = "${website}/issues"
     repository = "${website}.git"
