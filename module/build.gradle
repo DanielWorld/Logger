@@ -17,11 +17,16 @@ apply plugin: 'kotlin-android-extensions'
 // https://github.com/novoda/bintray-release
 // $ ./gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=false
 apply plugin: 'com.novoda.bintray-release'
+
+ext {
+    versionCode = 1
+    versionName = '1.0.2'
+}
 publish {
     userOrg = 'danielworld'
     groupId = 'com.danielworld'
     artifactId = 'logger'
-    publishVersion = '1.0.0'
+    publishVersion = project.ext.versionName
     desc = 'A logger which contains stack element and other thread information'
     website = 'https://github.com/DanielWorld/Logger'
     issueTracker = "${website}/issues"
@@ -41,8 +46,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
