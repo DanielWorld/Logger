@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        Logger.setEnabled(true)
         Logger.d(MainActivity::class.java.name, "Hello!")
     }
 }
