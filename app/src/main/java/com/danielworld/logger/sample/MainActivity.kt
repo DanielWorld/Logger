@@ -12,6 +12,10 @@ class MainActivity : AppCompatActivity() {
 
 
         Logger.setEnabled(true)
-        Logger.d(MainActivity::class.java.name, "Hello!")
+        Logger.d(MainActivity::class.java.name, "Hello debug!")
+        Logger.i(MainActivity::class.java.name, "Hello info!")
+        Logger.v(MainActivity::class.java.name, "Hello verbose!")
+        Logger.w(MainActivity::class.java.name, "Hello warning!")
+        Logger.e(MainActivity::class.java.name, "Hello error!")
     }
 }
