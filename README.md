@@ -28,7 +28,7 @@ thread name + file name + method name + line number
 
 ## License
 Logger is licensed under the Apache License, Version 2.0.
-See [LICENSE](LICENSE) for full license text.
+See [LICENSE](LICENSE.txt) for full license text.
 
 ```
 Copyright (c) 2019 DanielWorld.
