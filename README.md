@@ -12,7 +12,7 @@ buildscript {
 
 dependencies {
     ...
-    implementation 'com.danielworld:logger:1.0.3'
+    implementation 'com.danielworld:logger:1.0.5'
 }
 </pre>
 
